@@ -14,7 +14,7 @@ body{
   background: #f7f7f9;
   color: #002e4e;
   font-feature-settings: "palt";
-  font-size: 13px;
+  font-size: 18px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.001em;
@@ -23,7 +23,7 @@ body{
 @media screen and (min-width: 1080px){
   .l-stage,
   body{
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -70,7 +70,7 @@ b, strong, .bold{
 .m-scene__inner{
   margin: 0 auto;
   max-width: 640px;
-  padding: 0 1em;
+  padding: 0 2em;
   position: relative;
 }
 
