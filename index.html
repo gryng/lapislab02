@@ -14,9 +14,208 @@
 
 <div class="l-stage">
 
-スポットライトタイム
-    
-</div>
+  <div class="m-cover">
+    <div class="m-cover__inner">
+      <h1>ガーネットの嘆き</h1>
+      <p>スポットライトタイム</p>
+    </div>
+  </div>
+
+  <div class="m-scene" data-scene="1">
+    <div class="m-scene__inner">
+
+      <p class="m-scene__num">SCENE 1</p>
+
+      <div class="m-dialog" data-player="0">
+        <p class="m-dialog__name">GM</p>
+        <div class="m-dialog__balloon">
+          <p><span>事件の真相はわかりましたか？</span></p>
+        </div>
+      <!-- /.m-dialog --></div>
+
+      <div class="m-dialog" data-player="1">
+        <p class="m-dialog__name">タカシ</p>
+        <div class="m-dialog__balloon">
+          <p><span>まだわかりません。コーヒーを飲めばひらめくと思います。</span></p>
+        </div>
+      <!-- /.m-dialog --></div>
+
+      <div class="m-dialog" data-player="2">
+        <p class="m-dialog__name">イッセイ</p>
+        <div class="m-dialog__balloon">
+          <p><span>なるほど。</span></p>
+        </div>
+      <!-- /.m-dialog --></div>
+
+      <div class="m-dialog" data-player="3">
+        <p class="m-dialog__name">さとみ</p>
+        <div class="m-dialog__balloon">
+          <p><span>近くにドトールならあったと思うけど…。</span></p>
+        </div>
+      <!-- /.m-dialog --></div>
+
+      <div class="m-dialog" data-player="0">
+        <p class="m-dialog__name">GM</p>
+        <div class="m-dialog__balloon">
+          <p><span>タカシさん、ドトールに入りますか？</span></p>
+        </div>
+      <!-- /.m-dialog --></div>
+
+      <div class="m-dialog" data-player="1">
+        <p class="m-dialog__name">タカシ</p>
+        <div class="m-dialog__balloon">
+          <p><span><mark>[自分の言葉で答える]</mark></span></p>
+        </div>
+      <!-- /.m-dialog --></div>
+    </div>
+
+    <div class="m-choice">
+      <div class="m-choice__inner">
+        <p class="m-choice__heading">GMの指示に従って選択してください</p>
+        <ul class="m-choice__list">
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-2" id="btn-scene-2a" class="js-choice-btn" data-scene="2" data-route="a" />
+            <label class="m-choice__btn" for="btn-scene-2a">ルート A</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-2" id="btn-scene-2b" class="js-choice-btn" data-scene="2" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-2b">ルート B</label>
+          </li>
+        </ul>
+      </div>
+    <!-- /.m-choice --></div>
+
+  <!-- /.m-scene [1] --></div>
   
-  </body>
+  <div class="m-scene m-scene--hidden" data-scene="2">
+    <div class="m-scene__inner">
+
+      <p class="m-scene__num">SCENE 2</p>
+      <div class="m-scene__route m-scene__route--hidden" data-route="a">
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name">GM</p>
+          <div class="m-dialog__balloon">
+            <p><span>わかりました。ではドトールに入りましょう。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="2">
+          <p class="m-dialog__name">イッセイ</p>
+          <div class="m-dialog__balloon">
+            <p><span>なるほど。ぼくは水だしアイスコーヒーをいただくよ。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="1">
+          <p class="m-dialog__name">タカシ</p>
+          <div class="m-dialog__balloon">
+            <p><span>同じのを。<span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="3">
+          <p class="m-dialog__name">さとみ</p>
+          <div class="m-dialog__balloon">
+            <p><span>ねえ、いつになったら推理を始めるの？</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name">GM</p>
+          <div class="m-dialog__balloon">
+            <p><span>タカシさん、そろそろ犯人を教えてください</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="1">
+          <p class="m-dialog__name">タカシ</p>
+          <div class="m-dialog__balloon">
+            <p><span><mark>[自分の言葉で答える]</mark></span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+      <!-- /.m-m-scene__route [2a] --></div>
+
+      <div class="m-scene__route m-scene__route--hidden" data-route="b">
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name">GM</p>
+          <div class="m-dialog__balloon">
+            <p><span>わかりました。ではドトールに入るのはやめましょう。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="2">
+          <p class="m-dialog__name">イッセイ</p>
+          <div class="m-dialog__balloon">
+            <p><span>なるほど。隣のエクセルシオールにしようか？</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="1">
+          <p class="m-dialog__name">タカシ</p>
+          <div class="m-dialog__balloon">
+            <p><span>うん。そうしよう。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="3">
+          <p class="m-dialog__name">さとみ</p>
+          <div class="m-dialog__balloon">
+            <p><span>ねえ、いつになったら推理を始めるの？</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name">GM</p>
+          <div class="m-dialog__balloon">
+            <p><span>タカシさん、そろそろ犯人を教えてください</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="1">
+          <p class="m-dialog__name">タカシ</p>
+          <div class="m-dialog__balloon">
+            <p><span><mark>[自分の言葉で答える]</mark></span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+      <!-- /.m-m-scene__route [2b] --></div>
+    </div>
+
+    <div class="m-choice">
+      <div class="m-choice__inner">
+        <p class="m-choice__heading">GMの指示に従って選択してください</p>
+        <ul class="m-choice__list">
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-3" id="btn-scene-3c" class="js-choice-btn" data-scene="3" data-route="c" />
+            <label class="m-choice__btn" for="btn-scene-3c">ルート C</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-3" id="btn-scene-3d" class="js-choice-btn" data-scene="3" data-route="d" />
+            <label class="m-choice__btn" for="btn-scene-3d">ルート D</label>
+          </li>
+        </ul>
+      </div>
+    <!-- /.m-choice --></div>
+  <!-- /.m-scene [2] --></div>
+
+  <div class="m-scene m-scene--hidden" data-scene="3">
+    <div class="m-scene__inner">
+
+      <p class="m-scene__num">SCENE 3</p>
+      <div class="m-scene__route m-scene__route--hidden" data-route="c">
+        GOOD END        
+      <!-- /.m-m-scene__route [3c] --></div>
+
+      <div class="m-scene__route m-scene__route--hidden" data-route="d">
+        BAD END
+      <!-- /.m-m-scene__route [3d] --></div>
+    </div>
+
+  <!-- /.m-scene [3] --></div>
+  
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
 </html>
