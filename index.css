@@ -131,10 +131,14 @@ b, strong, .bold{
 
 .m-choice__list{
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.m-choice__list-item + .m-choice__list-item{
-  margin-top: 1em;
+.m-choice__list-item{
+  margin: .5em;
 }
 
 .m-choice__list-item input{
@@ -147,7 +151,7 @@ b, strong, .bold{
   color: #fff;
   display: block;
   border-radius: 6em;
-  padding: .75em .5em;
+  padding: .75em 2.5em;
   transition-duration: .2s;
   font-weight: bold;
 }
@@ -164,7 +168,7 @@ b, strong, .bold{
 
 .m-choice__select-icon{
   position: absolute;
-  top: 1.3em;
+  top: 1.05em;
   right: 1.75em;
   color: #fff;
   pointer-events: none;
@@ -175,7 +179,7 @@ b, strong, .bold{
   width: 100%;
   box-sizing: border-box;
   font-size: 1rem;
-  padding: 1em 3.5em 1em 2em;
+  padding: .75em 3.5em .75em 1.5em;
   border-radius: 4em;
   font-weight: bold;
   border: 2px solid rgba(255,255,255,.5);
