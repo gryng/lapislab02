@@ -78,12 +78,12 @@ b, strong, .bold{
 
 .m-scene__num{
   position: absolute;
-  right: 1em;
+  right: 1.5em;
   top: 0;
   color: rgba(0,0,0,.25);
   font-weight: bold;
   font-style: italic;
-  font-size: .8em;
+  font-size: .75em;
 }
 
 .m-dialog{
@@ -96,6 +96,13 @@ b, strong, .bold{
 
 .m-dialog__balloon{
   font-family: serif;
+}
+
+.m-dialog.m-dialog--my .m-dialog__balloon > p > span:before{
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  margin-right: .25em;
+  font-weight: 900;
 }
 
 .m-dialog.m-dialog--blind .m-dialog__name > span,

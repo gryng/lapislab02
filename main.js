@@ -9,14 +9,15 @@ $(function(){
 
       // GMならすべての発言が見えるように
       $('.m-dialog').removeClass('m-dialog--blind');
+      $(".m-dialog[data-player=0]").addClass('m-dialog--my');
 
     } else {
 
       // すべての発言を隠す
-      $('.m-dialog').addClass('m-dialog--blind');
+      $('.m-dialog').addClass('m-dialog--blind').removeClass('m-dialog--my');
 
       // 選んだプレイヤーの発言を見えるようにする
-      $(".m-dialog[data-player=" + player_num + "]").removeClass("m-dialog--blind");
+      $(".m-dialog[data-player=" + player_num + "]").removeClass("m-dialog--blind").addClass('m-dialog--my');
 
       // 選んだプレイヤーのひとつ前の発言を見えるようにする
       $(".m-dialog[data-player=" + player_num + "]").prev('.m-dialog').removeClass("m-dialog--blind");
