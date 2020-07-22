@@ -23,7 +23,9 @@ $(function(){
 
     }
 
-  
+    // シーン1を表示
+    $("div[data-scene=1]").removeClass("m-scene--hidden");
+
     // スクロールアイコンを表示
     $(this).closest('.m-choice').find('.m-choice__next').removeClass('m-choice__next--hidden');
 
