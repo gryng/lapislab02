@@ -168,7 +168,8 @@ b, strong, .bold{
 
 .m-choice__select-icon{
   position: absolute;
-  top: 1.05em;
+  top: 50%;
+  transform: translateY(-50%);
   right: 1.75em;
   color: #fff;
   pointer-events: none;
