@@ -1,11 +1,36 @@
 $(function(){
 
-  console.log("start");
+  // プレイヤー選択
+  $('.js-select-player').change(function(){
 
+    var player_num = $(this).val();
+
+    if( player_num == 0){
+
+      // GMならすべての発言が見えるように
+      $('.m-dialog').removeClass('m-dialog--blind');
+
+    } else {
+
+      // すべての発言を隠す
+      $('.m-dialog').addClass('m-dialog--blind');
+
+      // 選んだプレイヤーの発言を見えるようにする
+      $(".m-dialog[data-player=" + player_num + "]").removeClass("m-dialog--blind");
+
+      // 選んだプレイヤーのひとつ前の発言を見えるようにする
+      $(".m-dialog[data-player=" + player_num + "]").prev('.m-dialog').removeClass("m-dialog--blind");
+
+    }
+
+  
+    // スクロールアイコンを表示
+    $(this).closest('.m-choice').find('.m-choice__next').removeClass('m-choice__next--hidden');
+
+  });
+
+  // ルート選択
   $('input.js-choice-btn').change(function(){
-
-    // クリックしたinputのdataを確認する
-    //console.log($(this).data().scene);
 
     var scene_num = $(this).data().scene;
     var route_type = $(this).data().route;

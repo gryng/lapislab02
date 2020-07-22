@@ -26,7 +26,7 @@
     <div class="m-choice__inner">
       <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> あなたのキャラクターを選択してください</p>
       <div class="m-choice__select">
-        <select class="m-choice__select-input">
+        <select class="m-choice__select-input js-select-player">
           <option>未選択</option>
           <option value="0">ゲームマスター</option>
           <option value="1">タカシ</option>
@@ -44,45 +44,45 @@
 
       <p class="m-scene__num">SCENE 1</p>
 
-      <div class="m-dialog" data-player="0">
-        <p class="m-dialog__name">GM</p>
+      <div class="m-dialog m-dialog--blind" data-player="0">
+        <p class="m-dialog__name"><span>GM</span></p>
         <div class="m-dialog__balloon">
           <p><span>事件の真相はわかりましたか？</span></p>
         </div>
       <!-- /.m-dialog --></div>
 
-      <div class="m-dialog" data-player="1">
-        <p class="m-dialog__name">タカシ</p>
+      <div class="m-dialog m-dialog--blind" data-player="1">
+        <p class="m-dialog__name"><span>タカシ</span></p>
         <div class="m-dialog__balloon">
           <p><span>まだわかりません。コーヒーを飲めばひらめくと思います。</span></p>
         </div>
       <!-- /.m-dialog --></div>
 
-      <div class="m-dialog" data-player="2">
-        <p class="m-dialog__name">イッセイ</p>
+      <div class="m-dialog m-dialog--blind" data-player="2">
+        <p class="m-dialog__name"><span>イッセイ</span></p>
         <div class="m-dialog__balloon">
           <p><span>なるほど。</span></p>
         </div>
       <!-- /.m-dialog --></div>
 
-      <div class="m-dialog" data-player="3">
-        <p class="m-dialog__name">さとみ</p>
+      <div class="m-dialog m-dialog--blind" data-player="3">
+        <p class="m-dialog__name"><span>さとみ</span></p>
         <div class="m-dialog__balloon">
           <p><span>近くにドトールならあったと思うけど…。</span></p>
         </div>
       <!-- /.m-dialog --></div>
 
-      <div class="m-dialog" data-player="0">
-        <p class="m-dialog__name">GM</p>
+      <div class="m-dialog m-dialog--blind" data-player="0">
+        <p class="m-dialog__name"><span>GM</span></p>
         <div class="m-dialog__balloon">
           <p><span>タカシさん、ドトールに入りますか？</span></p>
         </div>
       <!-- /.m-dialog --></div>
 
-      <div class="m-dialog" data-player="1">
-        <p class="m-dialog__name">タカシ</p>
+      <div class="m-dialog m-dialog--blind" data-player="1">
+        <p class="m-dialog__name"><span>タカシ</span></p>
         <div class="m-dialog__balloon">
-          <p><span><i class="fas fa-lightbulb"></i> <mark>[自分の言葉で答える]</mark></span></p>
+          <p><span><mark><i class="fas fa-lightbulb"></i> [自分の言葉で答える]</mark></span></p>
         </div>
       <!-- /.m-dialog --></div>
     </div>
@@ -111,43 +111,43 @@
 
       <p class="m-scene__num">SCENE 2</p>
       <div class="m-scene__route m-scene__route--hidden" data-route="a">
-        <div class="m-dialog" data-player="0">
-          <p class="m-dialog__name">GM</p>
+        <div class="m-dialog m-dialog--blind" data-player="0">
+          <p class="m-dialog__name"><span>GM</span></p>
           <div class="m-dialog__balloon">
             <p><span>わかりました。ではドトールに入りましょう。</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="2">
-          <p class="m-dialog__name">イッセイ</p>
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>イッセイ</span></p>
           <div class="m-dialog__balloon">
             <p><span>なるほど。ぼくは水だしアイスコーヒーをいただくよ。</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="1">
-          <p class="m-dialog__name">タカシ</p>
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>タカシ</span></p>
           <div class="m-dialog__balloon">
             <p><span>同じのを。<span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="3">
-          <p class="m-dialog__name">さとみ</p>
+        <div class="m-dialog m-dialog--blind" data-player="3">
+          <p class="m-dialog__name"><span>さとみ</span></p>
           <div class="m-dialog__balloon">
             <p><span>ねえ、いつになったら推理を始めるの？</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="0">
-          <p class="m-dialog__name">GM</p>
+        <div class="m-dialog m-dialog--blind" data-player="0">
+          <p class="m-dialog__name"><span>GM</span></p>
           <div class="m-dialog__balloon">
             <p><span>タカシさん、そろそろ犯人を教えてください</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="1">
-          <p class="m-dialog__name">タカシ</p>
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>タカシ</span></p>
           <div class="m-dialog__balloon">
             <p><span><mark>[自分の言葉で答える]</mark></span></p>
           </div>
@@ -156,43 +156,43 @@
       <!-- /.m-m-scene__route [2a] --></div>
 
       <div class="m-scene__route m-scene__route--hidden" data-route="b">
-        <div class="m-dialog" data-player="0">
-          <p class="m-dialog__name">GM</p>
+        <div class="m-dialog m-dialog--blind" data-player="0">
+          <p class="m-dialog__name"><span>GM</span></p>
           <div class="m-dialog__balloon">
             <p><span>わかりました。ではドトールに入るのはやめましょう。</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="2">
-          <p class="m-dialog__name">イッセイ</p>
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>イッセイ</span></p>
           <div class="m-dialog__balloon">
             <p><span>なるほど。隣のエクセルシオールにしようか？</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="1">
-          <p class="m-dialog__name">タカシ</p>
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>タカシ</span></p>
           <div class="m-dialog__balloon">
             <p><span>うん。そうしよう。</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="3">
-          <p class="m-dialog__name">さとみ</p>
+        <div class="m-dialog m-dialog--blind" data-player="3">
+          <p class="m-dialog__name"><span>さとみ</span></p>
           <div class="m-dialog__balloon">
             <p><span>ねえ、いつになったら推理を始めるの？</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="0">
-          <p class="m-dialog__name">GM</p>
+        <div class="m-dialog m-dialog--blind" data-player="0">
+          <p class="m-dialog__name"><span>GM</span></p>
           <div class="m-dialog__balloon">
             <p><span>タカシさん、そろそろ犯人を教えてください</span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog" data-player="1">
-          <p class="m-dialog__name">タカシ</p>
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>タカシ</span></p>
           <div class="m-dialog__balloon">
             <p><span><mark>[自分の言葉で答える]</mark></span></p>
           </div>
@@ -203,7 +203,7 @@
 
     <div class="m-choice">
       <div class="m-choice__inner">
-        <p class="m-choice__heading">GMの指示に従って選択してください</p>
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> GMの指示に従って選択してください</p>
         <ul class="m-choice__list">
           <li class="m-choice__list-item">
             <input type="radio" name="scene-3" id="btn-scene-3c" class="js-choice-btn" data-scene="3" data-route="c" />

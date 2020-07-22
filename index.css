@@ -97,6 +97,11 @@ b, strong, .bold{
   font-family: serif;
 }
 
+.m-dialog.m-dialog--blind .m-dialog__name > span,
+.m-dialog.m-dialog--blind .m-dialog__balloon > p > span{
+  background: #002e4e;
+}
+
 .m-choice{
   background: rgb(91,56,97);
   background: linear-gradient(90deg, rgba(91,56,97,1) 0%, rgba(106,44,69,1) 31%, rgba(16,24,61,1) 100%);
@@ -151,10 +156,11 @@ b, strong, .bold{
 
 .m-choice__select-icon{
   position: absolute;
-  top: 1em;
+  top: 1.3em;
   right: 1.75em;
   color: #fff;
   pointer-events: none;
+  line-height: 1;
 }
 
 .m-choice__select-input{
