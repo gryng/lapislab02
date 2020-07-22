@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <meta name="format-detection" content="telephone=no,address=no,email=no" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script src="https://kit.fontawesome.com/e803109e75.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -20,6 +21,23 @@
       <p>スポットライトタイム</p>
     </div>
   </div>
+
+  <div class="m-choice">
+    <div class="m-choice__inner">
+      <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> あなたのキャラクターを選択してください</p>
+      <div class="m-choice__select">
+        <select class="m-choice__select-input">
+          <option>未選択</option>
+          <option value="0">ゲームマスター</option>
+          <option value="1">タカシ</option>
+          <option value="2">イッセイ</option>
+          <option value="3">さとみ</option>
+        </select>
+        <div class="m-choice__select-icon"><i class="fas fa-angle-down"></i></div>
+      </div>
+      <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
+    </div>
+  <!-- /.m-choice --></div>
 
   <div class="m-scene" data-scene="1">
     <div class="m-scene__inner">
@@ -64,14 +82,14 @@
       <div class="m-dialog" data-player="1">
         <p class="m-dialog__name">タカシ</p>
         <div class="m-dialog__balloon">
-          <p><span><mark>[自分の言葉で答える]</mark></span></p>
+          <p><span><i class="fas fa-lightbulb"></i> <mark>[自分の言葉で答える]</mark></span></p>
         </div>
       <!-- /.m-dialog --></div>
     </div>
 
     <div class="m-choice">
       <div class="m-choice__inner">
-        <p class="m-choice__heading">GMの指示に従って選択してください</p>
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> GMの指示に従って選択してください</p>
         <ul class="m-choice__list">
           <li class="m-choice__list-item">
             <input type="radio" name="scene-2" id="btn-scene-2a" class="js-choice-btn" data-scene="2" data-route="a" />
@@ -82,6 +100,7 @@
             <label class="m-choice__btn" for="btn-scene-2b">ルート B</label>
           </li>
         </ul>
+        <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
       </div>
     <!-- /.m-choice --></div>
 
@@ -195,6 +214,7 @@
             <label class="m-choice__btn" for="btn-scene-3d">ルート D</label>
           </li>
         </ul>
+        <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
       </div>
     <!-- /.m-choice --></div>
   <!-- /.m-scene [2] --></div>
@@ -214,6 +234,10 @@
 
   <!-- /.m-scene [3] --></div>
   
+  <footer class="m-gfooter">
+    &copy; <a href="https://twitter.com/lapislab">ラピラボ</a>
+  </footer>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

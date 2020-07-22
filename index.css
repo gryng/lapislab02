@@ -13,11 +13,11 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   background: #f7f7f9;
   color: #002e4e;
-  font-feature-settings: "palt";
+  font-feature-settings: "pkna" 1;
   font-size: 18px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: -0.001em;
+  letter-spacing: .01em;
 }
 
 @media screen and (min-width: 1080px){
@@ -41,34 +41,30 @@ b, strong, .bold{
 
 .m-cover{
   text-align: center;
-  background: rgb(198,83,210);
-  background: linear-gradient(90deg, rgba(198,83,210,1) 0%, rgba(195,26,94,1) 30%, rgba(176,77,34,1) 100%);
+  background: #e9d4c4;
   color: #fff;
-  padding: 2em;
-  min-height: 60vh;
+  padding: 2em 1em;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .m-cover__inner{
-  background: rgba(255,255,255,.1);
-  padding: 3em 1.5em;
-  box-shadow: 0 15px 24px rgba(0,0,0,.2);
+  background: rgb(179,120,76);
+  background: linear-gradient(90deg, rgba(179,120,76,1) 0%, rgba(179,37,58,1) 31%, rgba(164,31,103,1) 100%);
+  padding: 3em 2.5em;
+  box-shadow: 0 15px 24px rgba(103,10,29,.25);
 }
 
 .m-cover h1{
   font-weight: bold;
-  font-size: 2em;
-  margin-bottom: .5em;
-}
-
-.m-scene{
-  margin: 2em 0;
+  font-size: 1.6em;
+  font-family: serif;
 }
 
 .m-scene__inner{
-  margin: 0 auto;
+  margin: 3em auto;
   max-width: 640px;
   padding: 0 2em;
   position: relative;
@@ -86,6 +82,7 @@ b, strong, .bold{
   color: rgba(0,0,0,.25);
   font-weight: bold;
   font-style: italic;
+  font-size: .8em;
 }
 
 .m-dialog{
@@ -94,6 +91,10 @@ b, strong, .bold{
 
 .m-dialog__name{
   font-weight: bold;
+}
+
+.m-dialog__balloon{
+  font-family: serif;
 }
 
 .m-choice{
@@ -112,7 +113,7 @@ b, strong, .bold{
 
 .m-choice__heading{
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
 }
 
 .m-choice__list{
@@ -128,7 +129,7 @@ b, strong, .bold{
 }
 
 .m-choice__btn{
-  border: 2px solid #fff;
+  border: 2px solid rgba(255,255,255,.5);
   background: rgba(255,255,255,0);
   color: #fff;
   display: block;
@@ -141,4 +142,74 @@ b, strong, .bold{
 .m-choice__list-item input:checked + .m-choice__btn{
   background: rgba(255,255,255,1);
   color: #000;
+}
+
+.m-choice__select{
+  position: relative;
+  display: inline-block;
+}
+
+.m-choice__select-icon{
+  position: absolute;
+  top: 1em;
+  right: 1.75em;
+  color: #fff;
+  pointer-events: none;
+}
+
+.m-choice__select-input{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 1em 3.5em 1em 2em;
+  border-radius: 4em;
+  font-weight: bold;
+  border: 2px solid rgba(255,255,255,.5);
+  background: none;
+  color: #fff;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.m-choice__select-input option{
+  color: #000;
+}
+
+.m-choice__next{
+  margin-top: 1em;
+  font-size: 2em;
+  color: rgba(255,255,255,.4);
+  animation-name: next;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+}
+
+.m-choice__next.m-choice__next--hidden{
+  display: none;
+}
+
+@keyframes next {
+  0% {
+    transform: translate(0,0px);
+  }
+
+  100% {
+    transform: translate(0,-15px)
+  }
+}
+
+.m-gfooter{
+  text-align: center;
+  padding: 10em 1em 2em 1em;
+  font-size: .5em;
+  color: rgba(0,0,0,.5);
+}
+
+.m-gfooter a{
+  color: inherit;
+  text-decoration: none;
 }

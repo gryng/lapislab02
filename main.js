@@ -19,6 +19,8 @@ $(function(){
     // 該当ルートを表示
     $("div[data-scene=" + scene_num + "]").find("div[data-route=" + route_type + "]").removeClass("m-scene__route--hidden");
 
+    // スクロールアイコンを表示
+    $(this).closest('.m-choice').find('.m-choice__next').removeClass('m-choice__next--hidden');
 
   });
 });
