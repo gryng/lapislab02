@@ -10,6 +10,8 @@ $(function(){
       // GMならすべての発言が見えるように
       $('.m-dialog').removeClass('m-dialog--blind');
       $(".m-dialog[data-player=0]").addClass('m-dialog--my');
+      $('.m-pre').addClass('m-pre--hidden');
+      $(".m-pre[data-player=0]").removeClass("m-pre--hidden").addClass('m-pre--my');
 
     } else {
 
@@ -21,6 +23,13 @@ $(function(){
 
       // 選んだプレイヤーのひとつ前の発言を見えるようにする
       $(".m-dialog[data-player=" + player_num + "]").prev('.m-dialog').removeClass("m-dialog--blind");
+
+
+      // 準備テキストを隠す
+      $('.m-pre').addClass('m-pre--hidden');
+
+      // 選んだプレイヤーの準備テキストを表示する
+      $(".m-pre[data-player=" + player_num + "]").removeClass("m-pre--hidden").addClass('m-pre--my');
 
     }
 

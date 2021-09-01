@@ -17,8 +17,7 @@
 
   <div class="m-cover">
     <div class="m-cover__inner">
-      <h1>ライブオーバー!!</h1>
-      <p>スポットライトタイム</p>
+      <h1><img src="img/logo_01.png" /></h1>
     </div>
   </div>
 
@@ -29,9 +28,13 @@
         <select class="m-choice__select-input js-select-player">
           <option>未選択</option>
           <option value="0">ゲームマスター</option>
-          <option value="1">タカシ</option>
-          <option value="2">イッセイ</option>
-          <option value="3">さとみ</option>
+          <option value="1">仁藤近也</option>
+          <option value="2">陳蓮司</option>
+          <option value="3">オーメン</option>
+          <option value="4">葉田ひかる</option>
+          <option value="5">MIKE</option>
+          <option value="6">雨森ロミオ</option>
+          <option value="7">白金ジュリ</option>
         </select>
       </div>
       <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
@@ -41,58 +44,106 @@
   <div class="m-scene m-scene--hidden" data-scene="1">
     <div class="m-scene__inner">
 
-      <p class="m-scene__num">SCENE 1</p>
+      <p class="m-scene__num">SCENE 1 / 準備</p>
 
-      <div class="m-dialog m-dialog--blind" data-player="0">
-        <p class="m-dialog__name"><span>GM</span></p>
-        <div class="m-dialog__balloon">
-          <p><span>事件の真相はわかりましたか？</span></p>
-        </div>
-      <!-- /.m-dialog --></div>
+      <div class="m-pre m-pre--hidden" data-player="0">
 
-      <div class="m-dialog m-dialog--blind" data-player="1">
-        <p class="m-dialog__name"><span>タカシ</span></p>
-        <div class="m-dialog__balloon">
-          <p><span>まだわかりません。コーヒーを飲めばひらめくと思います。</span></p>
-        </div>
-      <!-- /.m-dialog --></div>
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name"><span>赤眼鏡</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>あんた達、いい加減にしなさいよ！<br>私はただのスタッフじゃないわ。盛杉閣下の大ファン…いえ信者よ！このイベントのスタッフに応募したのも盛杉閣下に近づけると思ったからよ。それなのにこんなことになるなんて…。許せない。<br>あんた達の素人推理はもうたくさんだわ！あと3分よ。あと3分で犯人を決めなさい！さっさとしないとこいつの首をはねるわよ！！</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
 
-      <div class="m-dialog m-dialog--blind" data-player="2">
-        <p class="m-dialog__name"><span>イッセイ</span></p>
-        <div class="m-dialog__balloon">
-          <p><span>なるほど。</span></p>
-        </div>
-      <!-- /.m-dialog --></div>
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name"><span>GM</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>突然、赤い眼鏡を掛けた女性スタッフが大声をあげた。そしてショルダーバッグからナイフ取り出すとエアラボの社長に襲いかかり、手首を掴んで後ろから素早く拘束、ナイフを社長の首元に突きつけた。<br>社長を人質にとられ、赤眼鏡のスタッフに脅されたあなた達は、残り3分で犯人を決定することにしました。議論時間はラスト3分です。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
 
-      <div class="m-dialog m-dialog--blind" data-player="3">
-        <p class="m-dialog__name"><span>さとみ</span></p>
-        <div class="m-dialog__balloon">
-          <p><span>近くにドトールならあったと思うけど…。</span></p>
+        <div class="m-note">
+          <p>※GM⇒スタッフの証言カードを１枚入れ替える。【壊れた赤眼鏡】<br>※ここから３分の議論時間。</p>
         </div>
-      <!-- /.m-dialog --></div>
 
-      <div class="m-dialog m-dialog--blind" data-player="0">
-        <p class="m-dialog__name"><span>GM</span></p>
-        <div class="m-dialog__balloon">
-          <p><span>タカシさん、ドトールに入りますか？</span></p>
-        </div>
-      <!-- /.m-dialog --></div>
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name"><span>赤眼鏡</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>3分経ったわ。犯人投票の時間よ。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
 
-      <div class="m-dialog m-dialog--blind" data-player="1">
-        <p class="m-dialog__name"><span>タカシ</span></p>
-        <div class="m-dialog__balloon">
-          <p><span><mark>[自分の言葉で答える]</mark></span></p>
+        <div class="m-note">
+          <p>※犯人投票フェーズ⇒犯人候補確定<br>※SLT準備タイム</p>
         </div>
-      <!-- /.m-dialog --></div>
+  
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name"><span>赤眼鏡</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>犯人候補は〇〇に決まったようね。ただ、それだけじゃ納得いかないわ、今日のこと、事件のこと、すべて明らかにしてちょうだい。そして、ここからはViewTubeでライブ配信をしてもらうわ。盛杉閣下の死の真相をたくさんの視聴者に見届けてもらいましょう。さっさと放送を再開して！！</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name"><span>GM</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>メンバー達がざわめき、顔を見合わせるなか、赤眼鏡のスタッフは強引に番組の放送を再開させた。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name"><span>赤眼鏡</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>(カメラに向かって)視聴者のみなさ～ん！これから史上最高のリアル殺人推理ショーがはじまります。どんなチャンネルよりも絶対刺激的でおもしろいはずです！ぜひ拡散してくださいね。では、スタートっ！</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="0">
+          <p class="m-dialog__name"><span>GM</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>お手元のデバイスに表示されているスタートボタンを押してください。生放送スポットライトタイム、スタートです。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+      
+      </div>
+
+      <div class="m-pre m-pre--hidden" data-player="1">
+        仁藤近也のSLT準備のテキストが入ります。<br>準備ができたらGMの指示をお待ちください。
+      </div>
+
+      <div class="m-pre m-pre--hidden" data-player="2">
+        陳蓮司のSLT準備のテキストが入ります。<br>準備ができたらGMの指示をお待ちください。
+      </div>
+
+      <div class="m-pre m-pre--hidden" data-player="3">
+        オーメンのSLT準備のテキストが入ります。<br>準備ができたらGMの指示をお待ちください。
+      </div>
+
+      <div class="m-pre m-pre--hidden" data-player="4">
+        葉田ひかるのSLT準備のテキストが入ります。<br>準備ができたらGMの指示をお待ちください。
+      </div>
+
+      <div class="m-pre m-pre--hidden" data-player="5">
+        MIKEのSLT準備のテキストが入ります。<br>準備ができたらGMの指示をお待ちください。
+      </div>
+
+      <div class="m-pre m-pre--hidden" data-player="6">
+        ロミオのSLT準備のテキストが入ります。<br>準備ができたらGMの指示をお待ちください。
+      </div>
+
+      <div class="m-pre m-pre--hidden" data-player="7">
+        ジュリのSLT準備のテキストが入ります。<br>準備ができたらGMの指示をお待ちください。
+      </div>
+
     </div>
 
     <div class="m-choice">
       <div class="m-choice__inner">
-        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> GMの指示に従って選択してください</p>
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> GMの指示に従ってボタンを押してください</p>
         <ul class="m-choice__list">
           <li class="m-choice__list-item">
             <input type="radio" name="scene-2" id="btn-scene-2a" class="js-choice-btn" data-scene="2" data-route="a" />
-            <label class="m-choice__btn" for="btn-scene-2a">ルート A</label>
+            <label class="m-choice__btn" for="btn-scene-2a">スポットライトタイムスタート！</label>
           </li>
           <li class="m-choice__list-item">
             <input type="radio" name="scene-2" id="btn-scene-2b" class="js-choice-btn" data-scene="2" data-route="b" />
@@ -110,49 +161,62 @@
 
       <p class="m-scene__num">SCENE 2</p>
       <div class="m-scene__route m-scene__route--hidden" data-route="a">
+        <div class="m-dialog m-dialog--blind" data-player="5">
+          <p class="m-dialog__name"><span>MIKE</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              あのスタッフ…最低だな！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>近也</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              まさか、放送するなんて…
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              あれは本気の目だよ。こわっ！社長も人質に取られているし、やるしかないのかも…
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
         <div class="m-dialog m-dialog--blind" data-player="0">
           <p class="m-dialog__name"><span>GM</span></p>
           <div class="m-dialog__balloon">
-            <p><span>わかりました。ではドトールに入りましょう。</span></p>
+            <p><span>
+              自分達にも知りたいことや知っておきたいことが色々とあるのは事実だった。<br>
+              しばしの沈黙のあと、覚悟を決めたようにロミオが口を開いた。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="6">
+          <p class="m-dialog__name"><span>ロミオ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              たしかに、今日はみんなどこか変だったと思う。そういえば蓮司やひかるさんは何かを探してたようだったけど…
+            </span></p>
           </div>
         <!-- /.m-dialog --></div>
 
         <div class="m-dialog m-dialog--blind" data-player="2">
-          <p class="m-dialog__name"><span>イッセイ</span></p>
+          <p class="m-dialog__name"><span>蓮司</span></p>
           <div class="m-dialog__balloon">
-            <p><span>なるほど。ぼくは水だしアイスコーヒーをいただくよ。</span></p>
+            <p><span>
+              俺が探してたのは料理に関係があるものなんだ、見てくれこれを！<mark>【カードを提示。タイトルを読み上げる】</mark>さ！
+            </span></p>
           </div>
         <!-- /.m-dialog --></div>
 
-        <div class="m-dialog m-dialog--blind" data-player="1">
-          <p class="m-dialog__name"><span>タカシ</span></p>
-          <div class="m-dialog__balloon">
-            <p><span>同じのを。<span></p>
-          </div>
-        <!-- /.m-dialog --></div>
-
-        <div class="m-dialog m-dialog--blind" data-player="3">
-          <p class="m-dialog__name"><span>さとみ</span></p>
-          <div class="m-dialog__balloon">
-            <p><span>ねえ、いつになったら推理を始めるの？</span></p>
-          </div>
-        <!-- /.m-dialog --></div>
-
-        <div class="m-dialog m-dialog--blind" data-player="0">
-          <p class="m-dialog__name"><span>GM</span></p>
-          <div class="m-dialog__balloon">
-            <p><span>タカシさん、そろそろ犯人を教えてください</span></p>
-          </div>
-        <!-- /.m-dialog --></div>
-
-        <div class="m-dialog m-dialog--blind" data-player="1">
-          <p class="m-dialog__name"><span>タカシ</span></p>
-          <div class="m-dialog__balloon">
-            <p><span><mark>[自分の言葉で答える]</mark></span></p>
-          </div>
-        <!-- /.m-dialog --></div>
-
-      <!-- /.m-m-scene__route [2a] --></div>
+      <!-- /.m-scene__route [2a] --></div>
 
       <div class="m-scene__route m-scene__route--hidden" data-route="b">
         <div class="m-dialog m-dialog--blind" data-player="0">
@@ -197,24 +261,28 @@
           </div>
         <!-- /.m-dialog --></div>
 
-      <!-- /.m-m-scene__route [2b] --></div>
+      <!-- /.m-scene__route [2b] --></div>
     </div>
 
     <div class="m-choice">
       <div class="m-choice__inner">
-        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> GMの指示に従って選択してください</p>
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> 読み上げられたカードは？</p>
         <ul class="m-choice__list">
           <li class="m-choice__list-item">
+            <input type="radio" name="scene-3" id="btn-scene-3a" class="js-choice-btn" data-scene="3" data-route="a" />
+            <label class="m-choice__btn" for="btn-scene-3a">機材置き場の白い粉</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-3" id="btn-scene-3b" class="js-choice-btn" data-scene="3" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-3b">仁藤近也の白い粉</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-3" id="btn-scene-3d" class="js-choice-btn" data-scene="3" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-3d">オーメンの白い粉</label>
+          </li>
+          <li class="m-choice__list-item">
             <input type="radio" name="scene-3" id="btn-scene-3c" class="js-choice-btn" data-scene="3" data-route="c" />
-            <label class="m-choice__btn" for="btn-scene-3c">ルート C</label>
-          </li>
-          <li class="m-choice__list-item">
-            <input type="radio" name="scene-3" id="btn-scene-3d" class="js-choice-btn" data-scene="3" data-route="d" />
-            <label class="m-choice__btn" for="btn-scene-3d">ルート D</label>
-          </li>
-          <li class="m-choice__list-item">
-            <input type="radio" name="scene-3" id="btn-scene-3e" class="js-choice-btn" data-scene="3" data-route="e" />
-            <label class="m-choice__btn" for="btn-scene-3e">ルート E</label>
+            <label class="m-choice__btn" for="btn-scene-3c">白い粉以外</label>
           </li>
         </ul>
         <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
@@ -226,21 +294,505 @@
     <div class="m-scene__inner">
 
       <p class="m-scene__num">SCENE 3</p>
+      <div class="m-scene__route m-scene__route--hidden" data-route="a">
+
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              俺は料理人だから、舐めればそれがなんだかわかるんだ。これはきっと…ペロッ！<strong>【カードスリーブの中から重なっているカードを取り出し、タイトルを読み上げる】</strong>だ！そうだと思ったんだよ～！　
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="3">
+          <p class="m-dialog__name"><span>オーメン</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              それは、本当に料理に使うものなのか…？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そうだ、これは外国の秘境の村で作られた、輸入が禁じられている幻の粉、かければなんでも美味くなると言われている通称「ヤミーパウダー」だ！料理人の間では密かな噂になっていて、俺はどうしてもその味を知りたくて盛杉のツテを頼って違法輸入をしてしまったんだ…。すまない。<br>ひかるさんは何を探していたんですか？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              私が探してたのは美容にかかせない大事なもの…これよ<mark>【カードを提示。タイトルを読み上げる】！</mark>！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+      <!-- /.m-scene__route [3a] --></div>
+
+      <div class="m-scene__route m-scene__route--hidden" data-route="b">
+
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              俺は料理人だから、舐めればそれがなんだかわかるんだ。これはきっと…ペロッ！<mark>【カードスリーブの中から重なっているカードを取り出し、タイトルを読み上げる】</mark>だ！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="3">
+          <p class="m-dialog__name"><span>オーメン</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              それは、本当に料理に使うものなのか…？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              （そのものの用途などをアドリブで端的に答えてください）。<br>ひかるさんは何を探していたんですか？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              私が探してたのは美容にかかせない大事なもの…これよ<mark>【カードを提示。タイトルを読み上げる】！</mark>！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+      <!-- /.m-scene__route [3b] --></div>
+
       <div class="m-scene__route m-scene__route--hidden" data-route="c">
-        GOOD END        
-      <!-- /.m-m-scene__route [3c] --></div>
 
-      <div class="m-scene__route m-scene__route--hidden" data-route="d">
-        BAD END
-      <!-- /.m-m-scene__route [3d] --></div>
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              これは、料理に使える魔法の物体さ。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
 
-      <div class="m-scene__route m-scene__route--hidden" data-route="e">
-        SECRET END
-      <!-- /.m-m-scene__route [3e] --></div>
+        <div class="m-dialog m-dialog--blind" data-player="3">
+          <p class="m-dialog__name"><span>オーメン</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              それは、本当に料理に使うものなのか…？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              （そのものの用途などをアドリブで端的に答えてください）。<br>ひかるさんは何を探していたんですか？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              私が探してたのは美容にかかせない大事なもの…これよ<mark>【カードを提示。タイトルを読み上げる】</mark>！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+      <!-- /.m-scene__route [3c] --></div>
+
     </div>
 
+    <div class="m-choice">
+      <div class="m-choice__inner">
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> 読み上げられたカードは？</p>
+        <ul class="m-choice__list">
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-4" id="btn-scene-4b" class="js-choice-btn" data-scene="4" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-4b">機材置き場の白い粉</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-4" id="btn-scene-4a" class="js-choice-btn" data-scene="4" data-route="a" />
+            <label class="m-choice__btn" for="btn-scene-4a">仁藤近也の白い粉</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-4" id="btn-scene-4d" class="js-choice-btn" data-scene="4" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-4d">オーメンの白い粉</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-4" id="btn-scene-4c" class="js-choice-btn" data-scene="4" data-route="c" />
+            <label class="m-choice__btn" for="btn-scene-4c">白い粉以外</label>
+          </li>
+        </ul>
+        <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
+      </div>
+    <!-- /.m-choice --></div>
+
   <!-- /.m-scene [3] --></div>
+
+  <div class="m-scene m-scene--hidden" data-scene="4">
+    <div class="m-scene__inner">
+
+      <p class="m-scene__num">SCENE 4</p>
+      <div class="m-scene__route m-scene__route--hidden" data-route="a">
+        
+        <!-- メイクパウダー正解ルート -->
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              ほら、よくみて、<strong>【カードスリーブの中から重なっているカードを取り出し、タイトルを読み上げる】</strong >よ！これをなくしてしまって探していたの。大事なものだから探していただけよ。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              なるほどね、それは美容コーナーで使った大事な新作だもんね。納得！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そうよ、これは今日の為に用意した新作だもの！絶対に持ち帰らなきゃいけなかったのよ。もういいでしょう！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="5">
+          <p class="m-dialog__name"><span>MIKE</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そういえば、近也もなんか探してなかったか？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>近也</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              実は俺は…ひかるさんの大ファンで、今日はどうしてもサインをもらいたいと思って色紙を持ってきていたんだが、うっかりペンを忘れてしまって…。だから、<mark>【カードを提示。タイトルを読み上げる】</mark>を探してたのさ。<br>
+              (ひかるを見る)ひかるさん、サインください！！<br>
+              （※色紙と【先ほど提示したカード】をひかるに差し出す）
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+      <!-- /.m-scene__route [4a] --></div>
+
+      <div class="m-scene__route m-scene__route--hidden" data-route="b">
+
+        <!-- 違う白い粉ルート -->
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              ほら、よくみて、<strong>【カードスリーブの中から重なっているカードを取り出し、タイトルを読み上げる】</strong >よ！これはね、こう見えて実は美容にいいのよ？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              へ、へえ、ひかるさん、そんなものを美容に使うのね。一体どんな風に…
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              （そのものの用途などを適当にアドリブで答える）。もういいでしょう！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="5">
+          <p class="m-dialog__name"><span>MIKE</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そういえば、近也もなんか探してなかったか？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>近也</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              実は俺は…ひかるさんの大ファンで、今日はどうしてもサインをもらいたいと思って色紙を持ってきていたんだが、うっかりペンを忘れてしまって…。だから、<mark>【カードを提示。タイトルを読み上げる】</mark>を探してたのさ。<br>
+              (ひかるを見る)ひかるさん、サインください！！<br>
+              （※色紙と【先ほど提示したカード】をひかるに差し出す）
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+      <!-- /.m-scene__route [4b] --></div>
+
+      <div class="m-scene__route m-scene__route--hidden" data-route="c">
+
+        <!-- 全然違うものルート -->
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              これはね、こう見えて実は美容にいいのよ？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              へ、へえ、ひかるさん、そんなものを美容に使うのね。一体どんな風に…
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              （そのものの用途などを適当にアドリブで答える）。もういいでしょう！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="5">
+          <p class="m-dialog__name"><span>MIKE</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そういえば、近也もなんか探してなかったか？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>近也</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              実は俺は…ひかるさんの大ファンで、今日はどうしてもサインをもらいたいと思って色紙を持ってきていたんだが、うっかりペンを忘れてしまって…。だから、<mark>【カードを提示。タイトルを読み上げる】</mark>を探してたのさ。<br>
+              (ひかるを見る)ひかるさん、サインください！！<br>
+              （※色紙と【先ほど提示したカード】をひかるに差し出す）
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+      <!-- /.m-scene__route [4c] --></div>
+
+    </div>
+
+    <div class="m-choice">
+      <div class="m-choice__inner">
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> 読み上げられたカードは？</p>
+        <ul class="m-choice__list">
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-5" id="btn-scene-5a" class="js-choice-btn" data-scene="5" data-route="a" />
+            <label class="m-choice__btn" for="btn-scene-5a">ペン</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-5" id="btn-scene-5b" class="js-choice-btn" data-scene="5" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-5b">ペン以外</label>
+          </li>
+        </ul>
+        <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
+      </div>
+    <!-- /.m-choice --></div>
+
+  <!-- /.m-scene [4] --></div>
   
+  <div class="m-scene m-scene--hidden" data-scene="5">
+    <div class="m-scene__inner">
+
+      <p class="m-scene__num">SCENE 5</p>
+      <div class="m-scene__route m-scene__route--hidden" data-route="a">
+        
+        <!-- サインを書いてもらえるルート -->
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そんな風に思ってくれてたなんて…喜んでサインさせてもらうわ。<br>
+              <strong>(※実際にサインをして近也に返してあげてください)</strong><br>
+              ありがとう、近也くん。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>近也</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              ありがとうございます！！！一生の宝にします！！(サインを胸に当てて喜ぶ)
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              近也ってひかるさんのファンだったのね、知らなかった～。<br>
+              ってか、ロミリンもひかるさんのことを気にしてた気がするし、そもそも前から様子も変だった気がして、アタシ独自に捜査してたのよね、ロミリンの周辺！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="6">
+          <p class="m-dialog__name"><span>ロミオ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              なんだって、ジュリタン、俺を信じてなかったのか…？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そういうわけじゃないけど、でも怪しい行動をしていた自覚はあるはずよ！そしてアタシはついにわかってしまったの、ロミリンの秘密！ロミリンは<mark>【自分の言葉で秘密を語る】</mark>よ！！どう？当たってるでしょ！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+      <!-- /.m-scene__route [5a] --></div>
+
+      <div class="m-scene__route m-scene__route--hidden" data-route="b">
+
+        <!-- サインを書いてもらえないルート -->
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              ごめんなさい、気持ちは嬉しいんだけど、それではサインを書くことができないわ。でも、ありがとう、近也くん。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name"><span>近也</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そう…ですよね…。これじゃサインなんてできないですよね。ハハハ…（うなだれる）
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              近也ってひかるさんのファンだったのね、知らなかった～。<br>
+              ってか、ロミリンもひかるさんのことを気にしてた気がするし、そもそも前から様子も変だった気がして、アタシ独自に捜査してたのよね、ロミリンの周辺！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="6">
+          <p class="m-dialog__name"><span>ロミオ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              なんだって、ジュリタン、俺を信じてなかったのか…？
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そういうわけじゃないけど、でも怪しい行動をしていた自覚はあるはずよ！そしてアタシはついにわかってしまったの、ロミリンの秘密！ロミリンは<mark>【自分の言葉で秘密を語る】</mark>よ！！どう？当たってるでしょ！
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+      <!-- /.m-scene__route [5b] --></div>
+
+    </div>
+
+    <div class="m-choice">
+      <div class="m-choice__inner">
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> ロミオさん、どうですか？</p>
+        <ul class="m-choice__list">
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-5" id="btn-scene-6a" class="js-choice-btn" data-scene="6" data-route="a" />
+            <label class="m-choice__btn" for="btn-scene-6a">「実はそうなんだ」</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-6" id="btn-scene-6b" class="js-choice-btn" data-scene="6" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-6b">「それは違うよ」</label>
+          </li>
+        </ul>
+        <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
+      </div>
+    <!-- /.m-choice --></div>
+
+  <!-- /.m-scene [5] --></div>
+
+  <div class="m-scene m-scene--hidden" data-scene="6">
+    <div class="m-scene__inner">
+
+      <p class="m-scene__num">SCENE 6</p>
+      <div class="m-scene__route m-scene__route--hidden" data-route="a">
+        
+        王子であることを言い当てられたルート
+
+      <!-- /.m-scene__route [6a] --></div>
+
+      <div class="m-scene__route m-scene__route--hidden" data-route="b">
+
+        王子であることを隠せたルート
+
+      <!-- /.m-scene__route [6b] --></div>
+
+    </div>
+
+    <div class="m-choice">
+      <div class="m-choice__inner">
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> 読み上げられたカードは？</p>
+        <ul class="m-choice__list">
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-7" id="btn-scene-7a" class="js-choice-btn" data-scene="7" data-route="a" />
+            <label class="m-choice__btn" for="btn-scene-7a">A</label>
+          </li>
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-7" id="btn-scene-7b" class="js-choice-btn" data-scene="7" data-route="b" />
+            <label class="m-choice__btn" for="btn-scene-7b">B</label>
+          </li>
+        </ul>
+        <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
+      </div>
+    <!-- /.m-choice --></div>
+
+  <!-- /.m-scene [6] --></div>
+
+
   <footer class="m-gfooter">
     &copy; <a href="https://twitter.com/lapislab">ラピラボ</a>
   </footer>
