@@ -178,6 +178,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .m-choice__list-item {
