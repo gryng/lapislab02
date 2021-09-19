@@ -62,5 +62,14 @@ $(function(){
     // スクロールアイコンを表示
     $(this).closest('.m-choice').find('.m-choice__next').removeClass('m-choice__next--hidden');
 
+    // シーン10を非表示に
+    if ( scene_num==9 && route_type =="b" ) {
+      console.log("9b");
+      $("div[data-scene=10]").addClass("m-scene--hidden");
+      $("div[data-scene=9]").find(".m-choice").addClass("m-choice--hidden");
+    } else {
+      $("div[data-scene=9]").find(".m-choice").removeClass("m-choice--hidden");
+    }
+
   });
 });

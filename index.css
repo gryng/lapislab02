@@ -122,6 +122,10 @@ body {
 .m-dialog.m-dialog--blind .m-dialog__balloon > p > span {
   background: #002e4e; }
 
+.m-dialog.m-dialog--blind .m-dialog__name.m-dialog__name--visible > span,
+.m-dialog.m-dialog--blind .m-dialog__balloon.m-dialog__balloon--visible > p > span {
+  background: none; }
+
 .m-choice {
   background: #5b3861;
   background: linear-gradient(90deg, #7600c9 0%, #d200ff 100%);
@@ -129,6 +133,8 @@ body {
   color: #fff;
   text-align: center;
   padding: 2em 0; }
+  .m-choice.m-choice--hidden {
+    display: none; }
 
 .m-choice__inner {
   max-width: 640px;
@@ -211,11 +217,12 @@ body {
 .m-choice__next.m-choice__next--hidden {
   display: none; }
 
-.m-choice__msg-hint {
+.m-choice__msg-hint > span {
   text-decoration: underline; }
-  .m-choice__msg-hint.m-choice__msg-hint--blind > span {
-    background: #002e4e;
-    color: #002e4e; }
+.m-choice__msg-hint.m-choice__msg-hint--blind > span {
+  background: #002e4e;
+  color: #002e4e;
+  text-decoration: none; }
 
 .m-pre.m-pre--hidden {
   display: none; }

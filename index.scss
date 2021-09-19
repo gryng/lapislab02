@@ -116,6 +116,12 @@ body{
   background: #002e4e;
 }
 
+.m-dialog.m-dialog--blind .m-dialog__name.m-dialog__name--visible > span,
+.m-dialog.m-dialog--blind .m-dialog__balloon.m-dialog__balloon--visible > p > span{
+  background: none;
+}
+
+
 .m-choice{
   background: rgb(91,56,97);
   background: linear-gradient(90deg, rgba(118,0,201,1) 0%, rgba(210,0,255,1) 100%);
@@ -123,6 +129,10 @@ body{
   color: #fff;
   text-align: center;
   padding: 2em 0;
+
+  &.m-choice--hidden{
+    display: none;
+  }
 }
 
 .m-choice__inner{
@@ -220,11 +230,15 @@ body{
 }
 
 .m-choice__msg-hint{
-  text-decoration: underline;
-  
+
+  & > span{
+    text-decoration: underline;
+  }
+
   &.m-choice__msg-hint--blind > span{
     background: #002e4e;
     color: #002e4e;
+    text-decoration: none;
   }
 }
 
