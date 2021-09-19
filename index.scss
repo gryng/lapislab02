@@ -219,6 +219,15 @@ body{
   display: none;
 }
 
+.m-choice__msg-hint{
+  text-decoration: underline;
+  
+  &.m-choice__msg-hint--blind > span{
+    background: #002e4e;
+    color: #002e4e;
+  }
+}
+
 .m-pre{
   &.m-pre--hidden{
     display: none;

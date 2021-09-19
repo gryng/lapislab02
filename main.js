@@ -8,7 +8,8 @@ $(function(){
     if( player_num == 0){
 
       // GMならすべての発言が見えるように
-      $('.m-dialog').removeClass('m-dialog--blind');
+      $('.m-dialog').removeClass('m-dialog--blind').removeClass('m-dialog--my');
+      $('.m-choice__msg-hint').removeClass('m-choice__msg-hint--blind');
       $(".m-dialog[data-player=0]").addClass('m-dialog--my');
       $('.m-pre').addClass('m-pre--hidden');
       $(".m-pre[data-player=0]").removeClass("m-pre--hidden").addClass('m-pre--my');
@@ -17,9 +18,11 @@ $(function(){
 
       // すべての発言を隠す
       $('.m-dialog').addClass('m-dialog--blind').removeClass('m-dialog--my');
+      $('.m-choice__msg-hint').addClass('m-choice__msg-hint--blind');
 
-      // 選んだプレイヤーの発言を見えるようにする
+      // 選んだプレイヤーの発言/ヒントを見えるようにする
       $(".m-dialog[data-player=" + player_num + "]").removeClass("m-dialog--blind").addClass('m-dialog--my');
+      $(".m-choice__msg-hint[data-player=" + player_num + "]").removeClass('m-choice__msg-hint--blind');
 
       // 選んだプレイヤーのひとつ前の発言を見えるようにする
       $(".m-dialog[data-player=" + player_num + "]").prev('.m-dialog').removeClass("m-dialog--blind");
