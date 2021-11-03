@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ライブオーバー!! スポットライトタイム チュートリアル</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script src="https://kit.fontawesome.com/e803109e75.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<div class="l-stage">
+
+  <div class="m-cover">
+    <div class="m-cover__inner">
+      <h1><img src="img/logo_01.png" /></h1>
+      <p style="color: #000;">スポットライトタイム<br><strong>チュートリアル</strong></p>
+    </div>
+  </div>
+
+  <div class="m-choice">
+    <div class="m-choice__inner">
+      <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> あなたのキャラクターを選択してください</p>
+      <div class="m-choice__select">
+        <select class="m-choice__select-input js-select-player">
+          <option>未選択</option>
+          <option value="0">ゲームマスター</option>
+          <option value="1">仁藤近也</option>
+          <option value="2">陳蓮司</option>
+          <option value="3">オーメン</option>
+          <option value="4">葉田ひかる</option>
+          <option value="5">MIKE</option>
+          <option value="6">雨森ロミオ</option>
+          <option value="7">白金ジュリ</option>
+        </select>
+      </div>
+      <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
+    </div>
+  <!-- /.m-choice --></div>
+
+  <div class="m-scene m-scene--hidden" data-scene="1">
+    <div class="m-scene__inner">
+
+      <p class="m-scene__num">SCENE 1</p>
+
+        <div class="m-dialog" data-player="0" data-visible="true">
+          <p class="m-dialog__name"><span>スタッフ(GM)</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>エアラボ出演者のみなさ～ん！おはようございます。本日はよろしくお願いいたします。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              出演者はこれで全員そろってるんですか？(スタッフを見る)
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+
+        <div class="m-dialog" data-player="0" data-visible="true">
+          <p class="m-dialog__name"><span>スタッフ(GM)</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>いえ、盛杉さんがまだです。</span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="5">
+          <p class="m-dialog__name m-dialog__name--visible"><span>MIKE</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              あいつまた遅刻かよ～。ルールにルーズな奴だぜッ
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name m-dialog__name--visible"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              それにしても、思ったよりいいカンジの船じゃない！あとで映え写真撮ろっと♪
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="3">
+          <p class="m-dialog__name m-dialog__name--visible"><span>オーメン</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              わざわざこんな船借りるなんて…社長、奮発したんだな…
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="2">
+          <p class="m-dialog__name"><span>蓮司</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              5周年だもんな。それだけ気合い入ってるってことだろ。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="6">
+          <p class="m-dialog__name"><span>ロミオ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              船体に英語が書いてある…。(文字を読むように)ダイパ・ニック号か。外国製の船みたいだな。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="4">
+          <p class="m-dialog__name"><span>ひかる</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              今日ってけっこう長時間よね。船酔いしないか心配になってきたわ…
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="0" data-visible="true">
+          <p class="m-dialog__name"><span>スタッフ(GM)</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>私たちスタッフが<mark>【カードを1枚提示してタイトルを読み上げる】</mark>なども用意していますので、何かあればお気軽にお声がけくださいね。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="1">
+          <p class="m-dialog__name m-dialog__name--visible"><span>近也</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              おお、用意がいい！ありがとうございます。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog m-dialog--blind" data-player="7">
+          <p class="m-dialog__name m-dialog__name--visible"><span>ジュリ</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              あのぉ、(片手を上げる)　まだ移動しないんですかぁ。ここ暑いんですけどっ
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+        <div class="m-dialog" data-player="0" data-visible="true">
+          <p class="m-dialog__name"><span>スタッフ(GM)</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              そうですね<br>盛杉さんが遅れてる理由は多分、<mark>【自分の言葉で理由をこたえる】</mark>だと思うので、先に移動しましょうか。。<br>あちらに見える階段を上がり、船の中へ向かいましょう。素敵なイベントになるといいですね。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
+
+    </div>
+
+    <div class="m-choice">
+      <div class="m-choice__inner">
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> GMの指示に従ってボタンを押してください</p>
+        <ul class="m-choice__list">
+          <li class="m-choice__list-item">
+            <input type="radio" name="scene-2" id="btn-scene-2a" class="js-choice-btn" data-scene="2" data-route="a" />
+            <label class="m-choice__btn" for="btn-scene-2a">スポットライトタイムスタート！</label>
+          </li>
+          <li class="m-choice__list-item">
+        </ul>
+        <div class="m-choice__next m-choice__next--hidden"><i class="fas fa-angle-double-down"></i></div>
+      </div>
+    <!-- /.m-choice --></div>
+
+  <!-- /.m-scene [1] --></div>
+
+  <footer class="m-gfooter">
+    &copy; <a href="https://twitter.com/lapislab">ラピラボ</a>
+  </footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</html>

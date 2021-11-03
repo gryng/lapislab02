@@ -17,7 +17,8 @@ $(function(){
     } else {
 
       // すべての発言を隠す
-      $('.m-dialog').addClass('m-dialog--blind').removeClass('m-dialog--my');
+      $('.m-dialog').not('[data-visible=true]').addClass('m-dialog--blind');
+      $('.m-dialog').removeClass('m-dialog--my');
       $('.m-choice__msg-hint').addClass('m-choice__msg-hint--blind');
 
       // 選んだプレイヤーの発言/ヒントを見えるようにする
@@ -27,13 +28,11 @@ $(function(){
       // 選んだプレイヤーのひとつ前の発言を見えるようにする
       $(".m-dialog[data-player=" + player_num + "]").prev('.m-dialog').removeClass("m-dialog--blind");
 
-
       // 準備テキストを隠す
       $('.m-pre').addClass('m-pre--hidden');
 
       // 選んだプレイヤーの準備テキストを表示する
       $(".m-pre[data-player=" + player_num + "]").removeClass("m-pre--hidden").addClass('m-pre--my');
-
     }
 
     // シーン1を表示
