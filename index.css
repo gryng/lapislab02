@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: border-box; }
 
@@ -109,14 +110,15 @@ body {
 .m-dialog__balloon {
   font-family: serif; }
 
+.m-dialog.m-dialog--my .m-dialog__balloon {
+  padding: 1em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
+
 .m-dialog.m-dialog--my .m-dialog__balloon > p > span strong {
   background: #d2fdfb; }
 
 .m-dialog.m-dialog--my .m-dialog__balloon > p > span:before {
-  content: "\f075";
-  font-family: "Font Awesome 5 Free";
-  margin-right: .25em;
-  font-weight: 900; }
+  content: "💬"; }
 
 .m-dialog.m-dialog--blind .m-dialog__name > span,
 .m-dialog.m-dialog--blind .m-dialog__balloon > p > span {
@@ -217,12 +219,14 @@ body {
 .m-choice__next.m-choice__next--hidden {
   display: none; }
 
-.m-choice__msg-hint > span {
-  text-decoration: underline; }
-.m-choice__msg-hint.m-choice__msg-hint--blind > span {
-  background: #002e4e;
-  color: #002e4e;
-  text-decoration: none; }
+.m-choice__msg-hint {
+  margin-bottom: .75em; }
+  .m-choice__msg-hint > span {
+    text-decoration: underline; }
+  .m-choice__msg-hint.m-choice__msg-hint--blind > span {
+    background: #002e4e;
+    color: #002e4e;
+    text-decoration: none; }
 
 .m-pre.m-pre--hidden {
   display: none; }
