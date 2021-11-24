@@ -189,7 +189,7 @@
         台本形式のセリフを各人物になりきって読み進めながら事件の真相に近付いていくパートです。<br>
         ①あなたは金の盾がなぜ自分のカバンから出て来たのかを推理し述べるくだりがあります。<br>あなたの言葉で述べられるよう情報を整理しておきましょう。<br>
         <br>
-        ②あなたはいざという時の為「武器」のカードを使って提示するくだりがあります。『当てはめたいカード』を選んでおきましょう。セリフに【カード使用】と書かれた箇所でそのカードを手にしてカード名を使い会話を進めます。<br>
+        ②あなたはいざという時ジュリを守る為に、カードを提示するくだりがあります。ジュリを守れそうなカードを選び、それをどのように使うのか等を考えておきましょう。セリフに【カード使用】と書かれた箇所でそのカードを手にしてカード名を使い会話を進めます。<br>
         たとえ使用したいカードが手元にない場合でもセリフをスキップすることは出来ません。手元にあるどれかのカードを使って会話を進めてください。<br>
         <br>
         セリフを読む場合には出来るだけキャラになりきるとより楽しめるでしょう。多少のアドリブはOKです。自由に楽しんでください！
@@ -1149,14 +1149,15 @@
       <P>一同 拍手</P>
 
       <div class="m-dialog" data-player="0">
-        <p class="m-dialog__name m-dialog__name--visible">赤眼鏡</span></p>
-        <div class="m-dialog__balloon">
+        <p class="m-dialog__name">赤眼鏡</span></p>
+        <div class="m-dialog__balloon m-dialog__balloon--visible">
           <p><span>
-            <strong>★リリックが成功していたら</strong><br>
-            おお、上手く韻が踏めてるじゃないか、感心してしまった！<br>
-            <strong>★リリックが失敗していたら</strong><br>
-            おいおい、韻なんて踏めてないじゃないか！※アドリブ補足自由<br>
-            <br>
+            <span class="m-dialog__blind">
+              <strong>★リリックが成功していたら</strong><br>
+              おお、上手く韻が踏めてるじゃないか、感心してしまった！<br>
+              <strong>★リリックが失敗していたら</strong><br>
+              おいおい、韻なんて踏めてないじゃないか！※アドリブ補足自由<br>
+            </span>
             って、いやいやいや、あんたたち！！！サインだのリリックだの茶番はいい加減にしなさい！！仲良し友情ごっこなんてやってる場合じゃないのよ！親愛なる盛杉閣下が死んでるのよ！？わかってんの？さっさと事件の話をするのよ！
           </span></p>
         </div>
@@ -1262,7 +1263,7 @@
 
       <div class="m-dialog m-dialog--blind" data-player="4">
         <p class="m-dialog__name m-dialog__name--visible">ひかる</span></p>
-        <div class="m-dialog__balloon">
+        <div class="m-dialog__balloon m-dialog__balloon--visible">
           <p><span>
             私は<mark>【カード名】</mark>なんじゃないかしらって考えてるわ。
           </span></p>
@@ -1327,7 +1328,7 @@
         <p class="m-dialog__name m-dialog__name--visible">ロミオ</span></p>
         <div class="m-dialog__balloon m-dialog__balloon--visible">
           <p><span>
-            赤眼鏡、やめろ！！大人しくするんだ。<mark>【カード名】</mark>これで拘束してやる！ハッ！！(赤眼鏡の方へカードを突きつける)
+            赤眼鏡、やめろ！！大人しくするんだ！そうだ、<mark>【カード名】</mark>を使おう！ハッ！(赤眼鏡の方へカードを突きつける)
           </span></p>
         </div>
       <!-- /.m-dialog --></div>
@@ -1465,13 +1466,12 @@
 
     <div class="m-choice m-choice--hidden">
       <div class="m-choice__inner">
-        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> ????さんの反応は？</p>
-        <p class="m-choice__msg-hint m-choice__msg-hint--blind" data-player="4"><span>ひかるさん、マフィンのことを告白して一緒に自首する場合はAのセリフを読んでください。自首しない場合はBのセリフを読んでください。</span></p>
+        <p class="m-choice__heading"><i class="fas fa-exclamation-circle"></i> ひかるさんの反応は？</p>
         <ul class="m-choice__list">
           <li class="m-choice__list-item">
             <p class="m-choice__msg-hint m-choice__msg-hint--blind" data-player="4"><span>ひかるさん、マフィンのことを告白して一緒に自首する場合はAのセリフを読んでください。</span></p>
             <input type="radio" name="scene-10" id="btn-scene-10a" class="js-choice-btn" data-scene="10" data-route="a" />
-            <label class="m-choice__btn" for="btn-scene-10a">A「実は…」</label>
+            <label class="m-choice__btn" for="btn-scene-10a">A「私…」</label>
           </li>
           <li class="m-choice__list-item">
             <p class="m-choice__msg-hint m-choice__msg-hint--blind" data-player="4"><span>自首しない場合はBのセリフを読んでください。</span></p>
@@ -1496,16 +1496,16 @@
           <p class="m-dialog__name m-dialog__name--visible">ひかる</span></p>
           <div class="m-dialog__balloon">
             <p><span>
-              <mark>実は、</mark>私も言わなければいけないことがあるわ。私は、今日盛杉にナッツ入りの手作りマフィンを差し入れていたの。あいつが重度のナッツアレルギーだって知っていてね。私はずっと盛杉に脅されていて、彼が死んでもいいと思ってそんな差し入れをしてしまった。盛杉は結果的にはマフィンを食べていなかったみたいだけど。少しタイミングが違えば、私のマフィンで彼は死んでいたかもしれない。だから、私も同罪のようなものだわ。一緒に罪を償いましょう。(近也を見る)
+              <mark>私</mark>も言わなければいけないことがあるわ。私は、今日盛杉にナッツ入りの手作りマフィンを差し入れていたの。あいつが重度のナッツアレルギーだって知っていてね。私はずっと盛杉に脅されていて、彼が死んでもいいと思ってそんな差し入れをしてしまった。盛杉は結果的にはマフィンを食べていなかったみたいだけど。少しタイミングが違えば、私のマフィンで彼は死んでいたかもしれない。だから、私も同罪のようなものだわ。一緒に罪を償いましょう。(近也を見る)
             </span></p>
           </div>
         <!-- /.m-dialog --></div>
 
         <div class="m-dialog m-dialog--blind" data-player="1">
           <p class="m-dialog__name m-dialog__name--visible">近也</span></p>
-          <div class="m-dialog__balloon">
+          <div class="m-dialog__balloon m-dialog__balloon--visible">
             <p><span>
-              ひかるさん、まさか、そんな…。でも、だとしたら、俺が先に手を下してよかったです。あなたが殺人犯にならなかっただけでも、俺の行動には意味が生まれたと思えます。トリッパーズの二人には迷惑かけて本当にごめんな。俺はしっかり罪を償うよ。(トリッパーズのふたりを見る)
+              <span class="m-dialog__blind">ひかるさん、まさか、そんな…。でも、だとしたら、俺が先に手を下してよかったです。あなたが殺人犯にならなかっただけでも、俺の行動には意味が生まれたと思えます。トリッパーズの二人には迷惑かけて本当にごめんな。</span>俺はしっかり罪を償うよ。(トリッパーズのふたりを見る)
             </span></p>
           </div>
         <!-- /.m-dialog --></div>
@@ -1572,7 +1572,15 @@
           </div>
         <!-- /.m-dialog --></div>
 
-        <p>お疲れ様でした～～～～！【Bエンド】</p>
+        <div class="m-dialog m-dialog--blind" data-player="0">
+          <p class="m-dialog__name m-dialog__name--visible">GM</span></p>
+          <div class="m-dialog__balloon">
+            <p><span>
+              こうして船上の配信者殺人事件は幕を閉じた。エアラボメンバーはそれぞれ無言でうつむき、赤眼鏡のスタッフはロミオによって拘束され茫然としている。船はもうすぐ港に着く、今の話は生放送されているし、港には警察が待機もしているはずだ。すべては終わったのだ。<br>
+              近也は小さい窓から外を眺めた。空には雲がなく細い月と星が輝いている、水面がそれらの光を反射してキラリキラリと揺れていた。近也ははじめてスーパーの屋上でキラリのステージを見たあの日を思い出し、そっと目を閉じる。
+            </span></p>
+          </div>
+        <!-- /.m-dialog --></div>
 
       <!-- /.m-scene__route [10b] --></div>
 

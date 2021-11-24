@@ -121,8 +121,11 @@ body{
 .m-dialog.m-dialog--blind .m-dialog__name.m-dialog__name--visible > span,
 .m-dialog.m-dialog--blind .m-dialog__balloon.m-dialog__balloon--visible > p > span{
   background: none;
-}
 
+  .m-dialog__blind{
+    background: #002e4e;
+  }
+}
 
 .m-choice{
   background: rgb(91,56,97);
