@@ -114,6 +114,9 @@ body {
   padding: 1em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
 
+.m-dialog.m-dialog--my[data-player="0"] .m-dialog__balloon {
+  outline: 2px solid red; }
+
 .m-dialog.m-dialog--my .m-dialog__balloon > p > span strong {
   background: #d2fdfb; }
 
