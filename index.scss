@@ -100,6 +100,10 @@ body{
   font-family: serif;
 }
 
+.m-dialog__visible-phrase{
+  background: #fff;
+}
+
 .m-dialog.m-dialog--my .m-dialog__balloon{
   padding: 1em;
   box-shadow: 0 1px 4px rgba(0,0,0,.15);
